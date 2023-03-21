@@ -33,5 +33,16 @@
     "authorizationHeader": "PE-Secret",
     "url": "",
     "returnedDataIndexes": ["url"]
+  },
+  "images": {
+    "url": "https://api.imgur.com/3/image",
+    "type": "imgur",
+    "imageEncoding": "jpg",
+    "contentType": "multipart/form-data",
+    "useContentType": true,
+    "authorizationHeader": "Authorization",
+    "authorizationPrefix": "Client-ID", // This is NOT where your actual client ID goes, add the to the server.cfg - Remove this!
+    "useAuthorization": true,
+    "returnedDataIndexes": ["data", "link"]
   }
 }
